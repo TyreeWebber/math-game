@@ -27,15 +27,7 @@ tbh at this point I have 0 clue how to implement this with ruby... BUT I WILL LE
    at this point I also have no clue how to implement this with ruby.
    =end
 
-3. Turn
-   - Manages current player's turn (who's turn is it, when it is a player's turn to play asks a new question)
-   - Needs to require question class and define new questions
-   
-   new_question = Questions.new()??
-
-   - If the new_question.question === false, it needs to call the life removal method to take a life away from the Player class.
-
-4. Game
+3. Game
    - Contains the loop.
    - Needs to create a new game with 2 players.
    - Game needs to initialize with parameter which takes in an array of 2 players and sets them and current player (who's turn it is).
