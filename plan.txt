@@ -1,0 +1,49 @@
+Classes
+
+1. Player 
+  - Initialized with (3) lives. 
+  - Require a method to remove lost lives if lives > 0.
+  - When lives = 0, player loses.
+  
+# defining player class
+class Player 
+  attr_accessor :name, :lives
+end
+
+# method to remove lost lives and end game if player hits 0 lives.
+=begin
+tbh at this point I have 0 clue how to implement this with ruby... BUT I WILL LEARN!!!
+=end
+
+2. Question
+   - Have a single method "question"
+   - Need to generate 2 random numbers num 1 = rand(1...x(idk what to go up to yet))
+   - Asks a question "what is #{num1} plus #{num2}" / "what is #{num1} - #{num2}"
+   - Define an answer (answer = num1 + num2 / answer = num1-num2)
+   - User answers using $stdin.gets.chomp.to_i
+   - Evaluates answer and outputs appropriate answer (answer === user-input => "Correct!" / answer !== user-input => "Incorrect YOU'VE LOST A LIFE!")
+
+   =begin
+   at this point I also have no clue how to implement this with ruby.
+   =end
+
+3. Turn
+   - Manages current player's turn (who's turn is it, when it is a player's turn to play asks a new question)
+   - Needs to require question class and define new questions
+   
+   new_question = Questions.new()??
+
+   - If the new_question.question === false, it needs to call the life removal method to take a life away from the Player class.
+
+4. Game
+   - Contains the loop.
+   - Needs to create a new game with 2 players.
+   - Game needs to initialize with parameter which takes in an array of 2 players and sets them and current player (who's turn it is).
+  
+   ??
+   @player1 = Player.new(players[0])
+   @player2 = Player.new(players[1])
+   user a attr_accessor somewhere?
+   - Needs a method to start a game.
+      - Needs a method that asks questions to current player, then changes current player to other player afterwards.
+      - continue to loop if both player lives > 0, if one player's lives hits 0 stop loop and that player loses.
